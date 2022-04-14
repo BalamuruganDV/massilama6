@@ -1253,7 +1253,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "skyler":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='newdata')
+            InlineKeyboardButton('« Back', callback_data='a')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
